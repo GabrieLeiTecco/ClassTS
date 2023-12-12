@@ -53,6 +53,13 @@ class Conta{
     }
 }
 
-let nome : string = String(prompt("Digite seu nome: "))
-let conta = new Conta(nome)
-conta.operacoes()
+let contas = []
+let conta1 = new Conta('gabriel')
+console.log(conta1.nome)
+contas.push(conta1.nome)
+console.log(contas)
+
+conta1 = new Conta('Guilherme')
+console.log(conta1.nome)
+contas.push(conta1.nome)
+console.log(contas)
